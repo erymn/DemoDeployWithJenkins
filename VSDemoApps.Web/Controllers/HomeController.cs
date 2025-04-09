@@ -10,6 +10,7 @@ namespace VSDemoApps.Web.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
+            //lets do some changes
             _logger = logger;
         }
 
