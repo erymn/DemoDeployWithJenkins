@@ -48,7 +48,7 @@ pipeline {
                 script {
                     // Deploy the application to coreapps folder
 					powershell '''
-                    Copy-Item -Path 'publish\\*.*' -Destination 'D:\\Sinau\\published\\coreapps' -Force
+                    Copy-Item -Path 'publish\\*' -Destination 'D:\\Sinau\\published\\coreapps' -recurse -Force
 					'''
                 }
             }
